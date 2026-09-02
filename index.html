@@ -706,5 +706,33 @@
 
     </main>
 
+    <script>
+    document.getElementById("interestForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const firstName = document.getElementById("first-name").value.trim();
+    const lastName = document.getElementById("last-name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const interest = document.getElementById("interest").value;
+
+    const subject = "Philanthropic Interest Inquiry";
+
+    const body =
+        "Hello Victoria,%0D%0A%0D%0A" +
+        "I am interested in learning more about the initiative.%0D%0A%0D%0A" +
+        "Name: " + encodeURIComponent(firstName + " " + lastName) + "%0D%0A" +
+        "Email: " + encodeURIComponent(email) + "%0D%0A" +
+        "Interest: " + encodeURIComponent(interest) + "%0D%0A%0D%0A" +
+        "Thank you.";
+
+    const mailto =
+        "mailto:AdvncdEduInitiative@outlook.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + body;
+
+    window.location.href = mailto;
+});
+</script>
+
 </body>
 </html>
