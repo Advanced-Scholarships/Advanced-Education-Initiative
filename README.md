@@ -111,7 +111,7 @@ If you are a:
 
 and would like to learn more, please reach out privately.
 
-**Contact:** AdvncdEduInitiative@outlook.com
+Please submit the Form and we will contact you to discuss further. 
 
 ---
 
