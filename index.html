@@ -605,9 +605,16 @@
         Leave your information below and we will be in touch
         personally with additional details.
     </p>
-<iframe data-tally-src="https://tally.so/embed/ZjBKjo?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1370" frameborder="0" marginheight="0" marginwidth="0" title="Philanthropic Interest"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-   
+ <iframe
+        data-tally-src="https://tally.so/embed/ZjBKjo?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="1370"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Philanthropic Interest">
+    </iframe>
 
 </div>
 
@@ -638,32 +645,32 @@
 
     </main>
 
-    <script>
-    document.getElementById("interestForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+       <script>
+    var d=document,
+    w="https://tally.so/widgets/embed.js",
+    v=function(){
+        if(typeof Tally!="undefined")
+            Tally.loadEmbeds();
+        else
+            d.querySelectorAll(
+                "iframe[data-tally-src]:not([src])"
+            ).forEach(function(e){
+                e.src=e.dataset.tallySrc
+            })
+    };
 
-    const firstName = document.getElementById("first-name").value.trim();
-    const lastName = document.getElementById("last-name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const interest = document.getElementById("interest").value;
-
-    const subject = "Philanthropic Interest Inquiry";
-
-    const body =
-        "Hello Victoria,%0D%0A%0D%0A" +
-        "I am interested in learning more about the initiative.%0D%0A%0D%0A" +
-        "Name: " + encodeURIComponent(firstName + " " + lastName) + "%0D%0A" +
-        "Email: " + encodeURIComponent(email) + "%0D%0A" +
-        "Interest: " + encodeURIComponent(interest) + "%0D%0A%0D%0A";
-
-    const mailto =
-        "mailto:AdvncdEduInitiative@outlook.com" +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + body;
-
-    window.location.href = mailto;
-  });
-  </script>
+    if(typeof Tally!="undefined")
+        v();
+    else if(
+        d.querySelector('script[src="'+w+'"]')==null
+    ){
+        var s=d.createElement("script");
+        s.src=w;
+        s.onload=v;
+        s.onerror=v;
+        d.body.appendChild(s);
+    }
+    </script>
 
 </body>
 </html>
