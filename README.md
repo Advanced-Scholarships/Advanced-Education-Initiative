@@ -71,7 +71,7 @@ There are:
 * Experienced individuals ready to transform their careers.
 * People who have spent years building everyone else's future and are finally trying to build their own.
 
-**They don't need another application to fill out.**
+**They don't need another long daunting essay application to fill out.**
 
 **They need someone willing to open the door.**
 
